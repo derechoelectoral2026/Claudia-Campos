@@ -1024,6 +1024,7 @@ function startTimer() {
     el.className = 'timer' + (secondsLeft<=300?' danger':secondsLeft<=900?' warn':'');
     if (secondsLeft<=0) showResults();
   }, 1000);
+}
 
 function showResults() {
   clearInterval(timerInterval);
